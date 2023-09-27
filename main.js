@@ -1,7 +1,8 @@
-const navLinks = document.querySelectorAll(".nav-link");
-const navLinksArray = Array.from(navLinks);
+const navLinksNodeList = document.querySelectorAll(".nav-link");
+const navElements = document.querySelectorAll(".nav-links");
+const navLinksArray = Array.from(navElements);
 
-console.log(navLinksArray)
+console.log(navLinksArray);
 navLinksArray.forEach((nl) => {
     nl.addEventListener("click", (event) => {
         if (event.target.tagName !== "A") {

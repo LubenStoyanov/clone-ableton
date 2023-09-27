@@ -1,4 +1,5 @@
 :root {
+    --red: #FD5948;
     --yellow: #fbffa7;
     --orange: #ff764d;
     --lightblue: #b2c5ff;
@@ -18,6 +19,7 @@
 body {
     background-color: var(--bg-secondary);
     width: 100%;
+    font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 a {
@@ -33,8 +35,6 @@ a {
 
 .header {
     font-size: 1.25rem;
-    font-family: futura-pt, Avenir, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600;
     line-height: 1.5rem;
     margin-bottom: 0.25rem;
@@ -46,7 +46,7 @@ a {
 }
 
 .nav-link-more a {
-    color: var(--orange);
+    color: var(--orange)
 }
 
 .logo {
@@ -71,8 +71,20 @@ a {
     cursor: pointer;
 }
 
+.nav-link-account {
+    font-size: 1rem;
+}
+
+.nav-link[href="#about"] {
+    color: var(--orange);
+}
+
 .nav-link-try {
     margin-left: auto;
+}
+
+.nav-link-try a {
+    color: var(--blue);
 }
 
 .nav-link-account {
@@ -89,4 +101,41 @@ a {
 
 .header__bottom-nav li {
     font-size: 1rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.about__img {
+    width: 90%;
+    max-width: 1330px;
+    margin: 0 0 8rem 0;
+}
+
+.about__ableton {
+    position: absolute;
+    font-size: 8.5rem;
+    color: var(--red);
+}
+
+.about__heading {
+    font-size: 1.875rem;
+    font-weight: 600;
+    max-width: 800px;
+    line-height: 1.4;
+}
+
+.about__heading a {
+    color: var(--blue);
+}
+
+.about__text {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    max-width: 800px;
 }
