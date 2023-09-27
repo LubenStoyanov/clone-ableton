@@ -1,0 +1,92 @@
+:root {
+    --yellow: #fbffa7;
+    --orange: #ff764d;
+    --lightblue: #b2c5ff;
+    --purple: #d5b3ff;
+    --green: #b6ffc0;
+    --blue: #0000ff;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f3f3f3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-secondary);
+    width: 100%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.page {
+    background-color: var(--bg-primary);
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.header {
+    font-size: 1.25rem;
+    font-family: futura-pt, Avenir, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.header__top-nav {
+    padding: 1.25rem 0 1.5rem 0;
+    border-bottom: 2px solid var(--bg-secondary);
+}
+
+.nav-link-more a {
+    color: var(--orange);
+}
+
+.logo {
+    font-size: 2rem;
+    margin-left: 2.5rem;
+}
+
+.logo::after {
+    content: "\1F3B9\1F3B9";
+    font-size: 1.75rem;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-links li {
+    cursor: pointer;
+}
+
+.nav-link-try {
+    margin-left: auto;
+}
+
+.nav-link-account {
+    margin-right: 2rem;
+}
+
+.header__bottom-nav {
+    padding: 1.25rem 2.5rem;
+}
+
+.header__bottom-nav ul {
+    display: flex;
+}
+
+.header__bottom-nav li {
+    font-size: 1rem;
+}
