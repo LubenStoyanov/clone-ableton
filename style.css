@@ -18,7 +18,6 @@
 
 body {
     background-color: var(--bg-secondary);
-    width: 100%;
     font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
@@ -111,9 +110,17 @@ a {
     position: relative;
 }
 
-.about__img {
+.about__bg-img {
+    background-image: url("./img/music-studio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
     width: 90%;
     max-width: 1330px;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 0 8rem 0;
 }
 
@@ -138,4 +145,56 @@ a {
     font-size: 1.25rem;
     margin-top: 2rem;
     max-width: 800px;
+    line-height: 1.5;
+}
+
+.make-music {
+    margin-top: 8rem;
+}
+
+.make-music__collage {
+    display: flex;
+}
+
+.make-music__collage-left-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.make-music__collage-left-img {
+    background-image: url("./img/music-board.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 41vw;
+    width: 41vw;
+    max-height: 660px;
+    max-width: 660px;
+    align-self: center;
+    position: relative;
+    left: 8rem;
+}
+
+.make-music__collage-right-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    width: 72vw;
+    height: 58vw;
+    max-height: 930px;
+}
+
+.make-music__collage-right-img {
+    background-image: url("./img/office.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+
+    height: 21vw;
+    width: 41vw;
+    max-width: 533px;
+    max-height: 400px;
+    margin-left: 8rem;
 }
