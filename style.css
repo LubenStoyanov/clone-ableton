@@ -128,7 +128,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 8rem;
 }
 
 .about__ableton {
@@ -142,6 +141,7 @@ a {
     font-weight: 600;
     max-width: 800px;
     line-height: 1.4;
+    margin-top: 8rem;
 }
 
 .section__text {
@@ -149,6 +149,7 @@ a {
     margin-top: 2rem;
     max-width: 800px;
     line-height: 1.5;
+    margin-bottom: 8rem;
 }
 
 .about__heading a {
@@ -156,13 +157,11 @@ a {
 }
 
 .make-music {
-    margin-top: 8rem;
     align-items: stretch;
 }
 
 .make-music__collage {
     display: flex;
-    margin-bottom: 8rem;
 }
 
 .make-music__collage-left-img-wrapper {
@@ -210,4 +209,11 @@ a {
 
 .make-music p {
     align-self: center;
+}
+
+.reason iframe {
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    min-height: 450px;
 }
