@@ -102,6 +102,13 @@ a {
     font-size: 1rem;
 }
 
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .about {
     display: flex;
     flex-direction: column;
@@ -121,7 +128,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 8rem 0;
+    margin-bottom: 8rem;
 }
 
 .about__ableton {
@@ -130,30 +137,32 @@ a {
     color: var(--red);
 }
 
-.about__heading {
+.section__heading {
     font-size: 1.875rem;
     font-weight: 600;
     max-width: 800px;
     line-height: 1.4;
 }
 
-.about__heading a {
-    color: var(--blue);
-}
-
-.about__text {
+.section__text {
     font-size: 1.25rem;
     margin-top: 2rem;
     max-width: 800px;
     line-height: 1.5;
 }
 
+.about__heading a {
+    color: var(--blue);
+}
+
 .make-music {
     margin-top: 8rem;
+    align-items: stretch;
 }
 
 .make-music__collage {
     display: flex;
+    margin-bottom: 8rem;
 }
 
 .make-music__collage-left-img-wrapper {
@@ -197,4 +206,8 @@ a {
     max-width: 533px;
     max-height: 400px;
     margin-left: 8rem;
+}
+
+.make-music p {
+    align-self: center;
 }
