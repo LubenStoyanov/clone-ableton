@@ -217,3 +217,65 @@ a {
     max-width: 800px;
     min-height: 450px;
 }
+
+.philosophy {
+    align-items: stretch;
+}
+
+.philosophy__collage {
+    display: flex;
+}
+
+.philosophy__collage-left-img-wrapper {
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    width: 58vw;
+    height: 75vw;
+    max-height: 1200px;
+}
+
+.philosophy__collage-left-img {
+    height: 21vw;
+    width: 41vw;
+    max-width: 533px;
+    max-height: 400px;
+    margin-right: 8rem;
+}
+
+.philosophy__collage-left-img:first-child {
+    background-image: url("./img/whiteboard.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.philosophy__collage-left-img:last-child {
+    background-image: url("./img/stone-wall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.philosophy__collage-right-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.philosophy__collage-right-img {
+    background-image: url("./img/music-instruments.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 41vw;
+    width: 41vw;
+    max-height: 660px;
+    max-width: 660px;
+    align-self: center;
+    position: relative;
+    right: 8rem;
+}
